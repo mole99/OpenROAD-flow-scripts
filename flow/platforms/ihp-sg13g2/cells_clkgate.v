@@ -1,4 +1,4 @@
-module OPENROAD_CLKGATE (CK, E, GCK);
+module OPENROAD_CLKGATE (GCK, E, CK);
   input CK;
   input E;
   output GCK;
