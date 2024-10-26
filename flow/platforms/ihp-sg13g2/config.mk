@@ -49,8 +49,8 @@ export TIELO_CELL_AND_PORT = sg13g2_tielo L_LO
 export MIN_BUF_CELL_AND_PORTS = sg13g2_buf_1 A X
 
 # Yosys mapping files
-export LATCH_MAP_FILE = $(PLATFORM_DIR)/cells_latch.v
-export CLKGATE_MAP_FILE = $(PLATFORM_DIR)/cells_clkgate.v
+export LATCH_MAP_FILE ?= $(PLATFORM_DIR)/cells_latch.v
+export CLKGATE_MAP_FILE ?= $(PLATFORM_DIR)/cells_clkgate.v
 
 # Define ABC driver and load
 export ABC_DRIVER_CELL = sg13g2_buf_4
